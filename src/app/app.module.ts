@@ -7,6 +7,7 @@ import { NavComponent } from './pages/nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatBadgeModule } from '@angular/material';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatBadgeModule
+    MatBadgeModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

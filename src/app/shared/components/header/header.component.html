@@ -1,3 +1,24 @@
-<p>
-  header works!
-</p>
+<mat-toolbar color="primary" class="header">      
+
+  <button
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="drawer.toggle()"
+    *ngIf="isHandset$ | async">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+
+  <span class="title-header">Página Inicial</span>
+
+  <button mat-button [matMenuTriggerFor]="menu" md-direction="right">Olá, User</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Editar</button>
+    <button mat-menu-item>Logout</button>
+  </mat-menu>
+
+  <button mat-icon-button>
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+
+</mat-toolbar>
