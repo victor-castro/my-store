@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+@import './my-store-palette0';
+@import './my-store-palette1';
+@import './my-store-pallete-warn';
+
+//Paletas
+$mystore-app-primary: mat-palette($mystore-palette0);
+$mystore-app-accent:  mat-palette($mystore-palette1, 500);
+$mystore-app-warn   : mat-palette($mystore-palette-warn);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$mystore-theme: mat-light-theme($mystore-app-primary, $mystore-app-accent, $mystore-app-warn);
+
+$primary: map-get($mystore-theme, primary);
+$accent: map-get($mystore-theme, accent);
+$warn: map-get($mystore-theme, warn);
+$foreground: map-get($mystore-theme, foreground);
+$background: map-get($mystore-theme, background);
