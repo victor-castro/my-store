@@ -2,8 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatBadgeModule } from '@angular/material';
+import { 
+  MatToolbarModule, 
+  MatButtonModule, 
+  MatSidenavModule, 
+  MatIconModule, 
+  MatListModule, 
+  MatGridListModule, 
+  MatCardModule, 
+  MatMenuModule, 
+  MatBadgeModule, 
+  MatDialogModule, 
+  MatTableModule
+} from '@angular/material';
 
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 @NgModule({
   imports: [
@@ -16,13 +29,19 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatDialogModule,
+    MatTableModule
   ],
   exports: [
     HeaderComponent
   ],
   declarations: [
-    HeaderComponent
-  ]
+    HeaderComponent,
+    ShoppingCartComponent
+  ],
+  entryComponents: [
+    ShoppingCartComponent
+  ],
 })
 export class SharedModule { }

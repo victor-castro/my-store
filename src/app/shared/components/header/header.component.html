@@ -1,4 +1,8 @@
-<mat-toolbar color="primary" class="header">      
+<mat-toolbar color="primary" class="header">   
+  
+    <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle
+      </button>
 
   <button
     type="button"
@@ -17,7 +21,7 @@
     <button mat-menu-item>Logout</button>
   </mat-menu>
 
-  <button mat-icon-button>
+  <button mat-icon-button (click)="openDialog()">
     <mat-icon matBadge="15" matBadgeColor="accent">
       shopping_cart
     </mat-icon>
