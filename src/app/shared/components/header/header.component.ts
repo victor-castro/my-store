@@ -29,8 +29,8 @@ export class HeaderComponent {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ShoppingCartComponent, {
-      width: '250px',
-      data: {name: this.name, animal: this.animal}
+      width: '320px',
+      data: { }
     });
 
     dialogRef.afterClosed().subscribe(result => {

@@ -12,7 +12,8 @@ import {
   MatCardModule, 
   MatMenuModule, 
   MatBadgeModule, 
-  MatDialogModule 
+  MatDialogModule, 
+  MatTableModule
 } from '@angular/material';
 
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
@@ -29,7 +30,8 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     MatCardModule,
     MatMenuModule,
     MatBadgeModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule
   ],
   exports: [
     HeaderComponent
