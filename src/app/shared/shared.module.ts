@@ -17,6 +17,8 @@ import {
 } from '@angular/material';
 
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { ProductItemComponent } from './components/product-item/product-item.component';
+import { ShowcaseComponent } from './components/showcase/showcase.component';
 
 @NgModule({
   imports: [
@@ -34,11 +36,15 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     MatTableModule
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    ProductItemComponent,
+    ShowcaseComponent
   ],
   declarations: [
     HeaderComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ProductItemComponent,
+    ShowcaseComponent
   ],
   entryComponents: [
     ShoppingCartComponent
