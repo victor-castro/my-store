@@ -13,7 +13,7 @@ export class ShowcaseComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.products);
+    console.log("teste");
   }
 
 }
